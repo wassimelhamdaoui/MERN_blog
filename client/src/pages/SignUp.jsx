@@ -8,6 +8,7 @@ export default function signUp() {
   const [errorMessages, setErrorMessages] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
   const handleChange = (e) => {
     setFormData({...formData, [e.target.id]: e.target.value.trim()});
   }
